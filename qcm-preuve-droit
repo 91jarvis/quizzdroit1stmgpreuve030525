@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Quizz Droit - La preuve (STMG)</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+      padding: 40px;
+      color: #333;
+    }
+    .quiz-container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 900px;
+      margin: auto;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #00274d;
+      border-bottom: 2px solid #00274d;
+      padding-bottom: 10px;
+    }
+    .signature-banner {
+      text-align: center;
+      font-weight: bold;
+      background-color: #e6ecf5;
+      border: 1px solid #c2cfe0;
+      border-radius: 8px;
+      padding: 10px;
+      margin: 20px 0;
+      color: #003366;
+    }
+    .question {
+      margin-bottom: 25px;
+    }
+    .question h3 {
+      margin-bottom: 10px;
+      color: #003366;
+    }
+    .question label {
+      display: block;
+      margin: 5px 0;
+      padding-left: 15px;
+    }
+    #result {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 30px;
+      font-size: 1.2em;
+      color: #003300;
+    }
+    button {
+      display: block;
+      margin: 30px auto;
+      padding: 12px 25px;
+      background-color: #003366;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0055a5;
+    }
+    .student-name {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .student-name input {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quizz – La preuve en droit (STMG)</h1>
+    <div class="signature-banner">
+      LPO ALGOUD-LAFFEMAS — M. SALHA © — 1ère STMG — Droit / La preuve
+    </div>
+
+    <div class="student-name">
+      <label for="student">Nom / Prénom :</label><br>
+      <input type="text" id="student" placeholder="Ex : Dupont Clara">
+    </div>
+
+    <form id="quizForm">
+      <div class="question"><h3>1. Qu’est-ce qu’un moyen de preuve ?</h3><label><input type="radio" name="q1" value="a"> Une déclaration faite par l’accusé</label><label><input type="radio" name="q1" value="b"> Un élément permettant d’établir la réalité d’un fait</label><label><input type="radio" name="q1" value="c"> Une hypothèse de travail</label></div>
+      <div class="question"><h3>2. Quel est le principe général en matière de preuve en droit civil ?</h3><label><input type="radio" name="q2" value="a"> La preuve doit être apportée uniquement par écrit</label><label><input type="radio" name="q2" value="b"> La preuve est libre</label><label><input type="radio" name="q2" value="c"> La preuve incombe toujours au défendeur</label></div>
+      <div class="question"><h3>3. Dans quel cas la preuve par tous moyens est-elle admise ?</h3><label><input type="radio" name="q3" value="a"> En matière commerciale</label><label><input type="radio" name="q3" value="b"> En matière pénale uniquement</label><label><input type="radio" name="q3" value="c"> Jamais</label></div>
+      <div class="question"><h3>4. Un SMS peut-il être utilisé comme preuve ?</h3><label><input type="radio" name="q4" value="a"> Oui, dans certains cas</label><label><input type="radio" name="q4" value="b"> Non, jamais</label><label><input type="radio" name="q4" value="c"> Seulement en matière pénale</label></div>
+      <div class="question"><h3>5. Qui doit prouver les faits qu’il avance ?</h3><label><input type="radio" name="q5" value="a"> Le juge</label><label><input type="radio" name="q5" value="b"> Le demandeur</label><label><input type="radio" name="q5" value="c"> L’avocat</label></div>
+      <div class="question"><h3>6. Quel type de preuve est souvent exigé pour les actes juridiques ?</h3><label><input type="radio" name="q6" value="a"> Témoignage</label><label><input type="radio" name="q6" value="b"> Preuve écrite</label><label><input type="radio" name="q6" value="c"> Preuve morale</label></div>
+      <div class="question"><h3>7. Dans quel cas la preuve est-elle libre ?</h3><label><input type="radio" name="q7" value="a"> En droit du travail uniquement</label><label><input type="radio" name="q7" value="b"> En matière délictuelle</label><label><input type="radio" name="q7" value="c"> En matière administrative</label></div>
+      <div class="question"><h3>8. Le commencement de preuve par écrit doit être :</h3><label><input type="radio" name="q8" value="a"> Signé par le juge</label><label><input type="radio" name="q8" value="b"> Commencé par le demandeur</label><label><input type="radio" name="q8" value="c"> Émis par celui contre qui on l'invoque</label></div>
+      <div class="question"><h3>9. Quel document constitue une preuve parfaite ?</h3><label><input type="radio" name="q9" value="a"> Un témoignage</label><label><input type="radio" name="q9" value="b"> Un écrit signé</label><label><input type="radio" name="q9" value="c"> Une vidéo</label></div>
+      <div class="question"><h3>10. Le serment peut-il être un mode de preuve ?</h3><label><input type="radio" name="q10" value="a"> Oui, dans certaines situations</label><label><input type="radio" name="q10" value="b"> Non, jamais</label><label><input type="radio" name="q10" value="c"> Oui, mais uniquement à l’oral</label></div>
+      <div class="question"><h3>11. Qu’est-ce qu’une présomption ?</h3><label><input type="radio" name="q11" value="a"> Une certitude prouvée</label><label><input type="radio" name="q11" value="b"> Une déduction que la loi ou le juge tire d’un fait connu</label><label><input type="radio" name="q11" value="c"> Une décision du ministère public</label></div>
+      <div class="question"><h3>12. Une présomption irréfragable :</h3><label><input type="radio" name="q12" value="a"> Peut être contredite par une preuve contraire</label><label><input type="radio" name="q12" value="b"> Ne peut jamais être remise en cause</label><label><input type="radio" name="q12" value="c"> Est toujours émise par le juge</label></div>
+    </form>
+
+    <button type="button" onclick="corrigerQuizz()">Corriger le quizz</button>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function corrigerQuizz() {
+      const reponses = {
+        q1: "b", q2: "b", q3: "a", q4: "a", q5: "b", q6: "b", q7: "b", q8: "c",
+        q9: "b", q10: "a", q11: "b", q12: "b"
+      };
+      let score = 0;
+      for (let q in reponses) {
+        const choix = document.querySelector(`input[name="${q}"]:checked`);
+        if (choix && choix.value === reponses[q]) {
+          score++;
+        }
+      }
+      const nom = document.getElementById("student").value.trim();
+      const total = Object.keys(reponses).length;
+      let commentaire = "";
+      if (score === total) {
+        commentaire = "Excellente maîtrise du thème de la preuve en droit. Félicitations ! — M. Salha";
+      } else if (score >= 9) {
+        commentaire = "Très bon niveau. Quelques imprécisions à revoir. — M. Salha";
+      } else if (score >= 6) {
+        commentaire = "Bonne base mais des points importants sont encore à travailler. — M. Salha";
+      } else {
+        commentaire = "Notions fragiles. Une reprise des cours et exercices est fortement recommandée. — M. Salha";
+      }
+      const result = document.getElementById("result");
+      result.innerHTML = `<p><strong>${nom ? nom : "Élève"}</strong> – Score : ${score} / ${total}</p><p>${commentaire}</p>`;
+    }
+  </script>
+</body>
+</html>
